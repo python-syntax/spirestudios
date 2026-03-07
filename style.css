@@ -18,6 +18,24 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    scrollbar-color: var(--navy) var(--deep-space);
+    scrollbar-width: thin; /* Optional: makes the scrollbar thinner */
+}
+
+/* For WebKit and Chromiums (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+  background-color: var(--deep-space); /* Color of the entire scrollbar area */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--deep-space); /* Color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--navy); /* Color of the draggable handle */
+  border-radius: 6px; /* Optional: adds roundness to the thumb */
+  border: 3px solid var(--deep-space); /* Optional: creates padding around the thumb */
 }
 
 /* Glassmorphism Navigation */
@@ -78,12 +96,12 @@ body {
 
 /* Cinematic Hero */
 .cinematic-hero {
-    height: 100vh;
+    height: 101vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at center, #214082 0%, #08112d 70%);
+    background: radial-gradient(circle at center, #214082 0%, #0b1840 70%);
     border-bottom: 2px solid white;
 }
 
