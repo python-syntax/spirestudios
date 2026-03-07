@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIRE_OS // TERMINAL</title>
+    <style>
+        :root {
+            --bg: #0a0f1d;
+            --navy: #214082;
+            --accent: #3b82f6;
+            --text: #f8fafc;
+            --dim: #64748b;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+            line-height: 1.4;
+            overflow-x: hidden;
+        }
+
+        /* Scanline Effect */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .terminal-header {
+            border-bottom: 1px solid var(--navy);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo { height: 40px; }
+
+        .status-bar { color: var(--accent); font-size: 0.8rem; letter-spacing: 2px; }
+
+        .output-line { margin-bottom: 10px; opacity: 0; animation: fadeIn 0.1s forwards; }
+        .output-line.blue { color: var(--accent); }
+        .output-line.dim { color: var(--dim); }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .terminal-card {
+            border: 1px solid var(--navy);
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .terminal-card:hover {
+            background: var(--navy);
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .terminal-card .cmd { color: var(--accent); font-weight: bold; margin-bottom: 10px; display: block; }
+        .terminal-card .desc { font-size: 0.8rem; color: var(--dim); }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        /* Delay animations for "boot" feel */
+        .l1 { animation-delay: 0.2s; }
+        .l2 { animation-delay: 0.4s; }
+        .l3 { animation-delay: 0.6s; }
+        .l4 { animation-delay: 1s; }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-header">
+        <img src="white_out.png" alt="Spire Logo" class="logo">
+        <div class="status-bar">
+            SPIRE_OS v2.0.6 // AUTHORIZED_DEVS_ONLY // SESSION: ACTIVE
+        </div>
+    </div>
+
+    <div class="terminal-body">
+        <div class="output-line l1">> INITIALIZING BOOT SEQUENCE...</div>
+        <div class="output-line l2">> LOADING REPOSITORIES [OK]</div>
+        <div class="output-line l3">> DECRYPTING INTERNAL UPLINKS [OK]</div>
+        <div class="output-line l4 blue">> WELCOME, ARCHITECT. ACCESS GRANTED.</div>
+
+        <div class="link-grid l4">
+            <a href="https://github.com/python-syntax/spirestudios" class="terminal-card">
+                <span class="cmd">./fetch_source</span>
+                <span class="desc">GitHub Production Repositories</span>
+            </a>
+            <a href="https://itch.io" class="terminal-card">
+                <span class="cmd">./build_logs</span>
+                <span class="desc">Publishing Account Services</span>
+            </a>
+            <a href="#" class="terminal-card">
+                <span class="cmd">./asset_vault</span>
+                <span class="desc">Shared Cloud Drive & Textures</span>
+            </a>
+            <a href="https://miro.com/app/dashboard/" class="terminal-card">
+                <span class="cmd">./sprint_task</span>
+                <span class="desc">Miro</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

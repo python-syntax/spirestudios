@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spire Studios | Evolution of Play</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Secret "spire" sequence trigger
+let inputBuffer = "";
+const secretCode = "spire";
+
+document.addEventListener('keydown', (e) => {
+    inputBuffer += e.key.toLowerCase();
+    
+    // Keep buffer short
+    if (inputBuffer.length > 10) {
+        inputBuffer = inputBuffer.substring(1);
+    }
+
+    // Check for the secret word
+    if (inputBuffer.includes(secretCode)) {
+        window.location.href = "devpage.html";
+    }
+});
+
+// Also keep the subtle footer link for convenience
+document.getElementById("dev-trigger").addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = "devpage.html";
+});
+    </script>
 </head>
 <body>
 
