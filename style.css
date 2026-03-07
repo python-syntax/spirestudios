@@ -83,7 +83,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at center, #214082 0%, #0a0f1d 70%);
+    background: radial-gradient(circle at center, #214082 0%, #0e1f50 70%);
+    border-bottom: 2px solid white;
 }
 
 .hero-logo {
@@ -154,7 +155,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
     position: relative;
 }
 
-.bg-motif { width: 40%; opacity: 0.2; }
+.bg-motif { width: 10%; opacity: 0.2; }
 
 /* Studio Culture */
 .studio-culture { padding: 100px 40px; background: #f8fafc; color: var(--deep-space); }
