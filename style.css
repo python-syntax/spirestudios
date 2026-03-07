@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at center, #214082 0%, #0b1840 70%);
+    background: radial-gradient(circle at center, #214082 0%, #08112d 70%);
     border-bottom: 2px solid white;
 }
 
