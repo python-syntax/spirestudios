@@ -83,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at center, #214082 0%, #0e1f50 70%);
+    background: radial-gradient(circle at center, #214082 0%, #08112d 70%);
     border-bottom: 2px solid white;
 }
 
