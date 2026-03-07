@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Spire Studios</title>
-        <link rel="icon" type="image/png" href="/favicon.png">
-    </head>
-    <body>
-        <h1>
-            Spire Studios
-        </h1><br>
-        <h2>
-            We have a website!
-        </h2><br>
-        <p>If anyone wants to write some html and css and js for the website,<br> that would be nice</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spire Studios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#games">GAMES</a>
+                <a href="#about">ABOUT</a>
+                <div class="logo-container">
+                    <img src="spire_v2.png" alt="Spire Studios Logo" class="main-logo">
+                </div>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="Lspire_v2.png" alt="Spire Icon" class="floating-spire">
+                <p>Developing immersive experiences at the intersection of art and technology.</p>
+                <a href="#games" class="btn">DISCOVER OUR WORLD</a>
+            </div>
+        </section>
+
+        <section id="games" class="content-section">
+            <div class="container">
+                <h2>IN DEVELOPMENT</h2>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="placeholder-img"></div>
+                        <h3>Fallen Keep</h3>
+                        <p>Previous Project for TSA</p>
+                    </div>
+                    <div class="game-card">
+                        <div class="placeholder-img"></div>
+                        <h3>PROJECT ...</h3>
+                        <p>Pushing the boundaries of multiplayer interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="outline.png" alt="Spire Outline" class="footer-icon">
+            <p>2026 SPIRE STUDIOS.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
