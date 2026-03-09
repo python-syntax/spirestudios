@@ -200,7 +200,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 }
 
 /* Footer */
-footer { padding: 80px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+footer { padding: 40px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 
 .footer-bottom {
     max-width: 1400px;
