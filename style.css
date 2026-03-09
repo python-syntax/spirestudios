@@ -200,7 +200,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 }
 
 /* Footer */
-footer { padding: 40px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+footer { padding: 20px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 
 .footer-bottom {
     max-width: 1400px;
@@ -210,7 +210,7 @@ footer { padding: 40px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
     align-items: center;
 }
 
-.footer-mini-logo { height: 40px; opacity: 0.4; }
+.footer-mini-logo { height: 40px; opacity: 1; }
 
 .socials a {
     color: var(--text-dim);
