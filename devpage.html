@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPIRE_OS // TERMINAL</title>
+    <link rel="icon" type="image/x-icon" id="favicon" href="favicon.png">
+    <script>
+        const favicon = document.getElementById('favicon');
+        function setFavicon() {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                favicon.href = 'favicon.png';
+            } else {
+                favicon.href = 'favicon_light.png';
+            }
+        }
+        setFavicon();
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setFavicon);
+    </script>
     <style>
         :root {
             --bg: #0a0f1d;
@@ -89,7 +102,7 @@
 <body>
 
     <div class="terminal-header">
-        <img src="white_out.png" alt="Spire Logo" class="logo">
+        <img src="spire_light.png" alt="Spire Logo" class="logo">
         <div class="status-bar">
             SPIRE_OS v2.0.6 // AUTHORIZED_DEVS_ONLY // SESSION: ACTIVE
         </div>

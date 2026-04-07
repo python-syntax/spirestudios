@@ -5,31 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spire Studios</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        // Secret "spire" sequence trigger
-let inputBuffer = "";
-const secretCode = "/spire";
-
-document.addEventListener('keydown', (e) => {
-    inputBuffer += e.key.toLowerCase();
-    
-    // Keep buffer short
-    if (inputBuffer.length > 10) {
-        inputBuffer = inputBuffer.substring(1);
-    }
-
-    // Check for the secret word
-    if (inputBuffer.includes(secretCode)) {
-        window.location.href = "devpage.html";
-    }
-});
-
-// Also keep the subtle footer link for convenience
-document.getElementById("dev-trigger").addEventListener('click', (e) => {
-    e.preventDefault();
-    window.location.href = "devpage.html";
-});
-    </script>
+    <link rel="icon" type="image/x-icon" href="Lspire_v2.png" id="favicon">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -106,7 +83,7 @@ document.getElementById("dev-trigger").addEventListener('click', (e) => {
     <footer>
         <div class="footer-bottom">
             <div style="display: flex; align-items: center;">
-            <img src="white_out.png" alt="Small Spire Icon" class="footer-mini-logo">
+            <img src="spire_light.png" alt="Small Spire Icon" class="footer-mini-logo">
             <p>SPIRE STUDIOS</p></div>
             <div class="socials">
                 <a href="#">X / TWITTER</a>
