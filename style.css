@@ -179,12 +179,23 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 .studio-culture { padding: 100px 40px; background: #f8fafc; color: var(--deep-space); }
 
 .culture-grid {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 80px;
     align-items: center;
+}
+@media (max-width: 600px) {
+  .culture-grid {
+    flex-direction: column;
+  }
+  .featured-game {
+    grid-template-columns: 1fr;
+  }
+  .contact-pill {
+    display: none;
+  }
 }
 
 .values { list-style: none; margin-top: 30px; }
@@ -193,7 +204,8 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 
 .culture-logo-feature {
     width: 100%;
-    max-width: 500px;
+    max-width: 100px;
+    min-width: 50px;
     filter: invert(1); /* Inverting the whiteout for the light background */
     display: block;
     margin: 0 auto;
