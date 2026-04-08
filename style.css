@@ -87,6 +87,8 @@ body::-webkit-scrollbar-thumb {
 
 .nav-links a:hover { color: white; }
 
+
+
 .contact-pill {
     padding: 8px 20px;
     border: 1px solid var(--accent-blue);
@@ -195,7 +197,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
   .featured-game {
     grid-template-columns: 1fr;
   }
-  .contact-pill {
+  .shortcut {
     display: none;
   }
 }
@@ -254,12 +256,12 @@ footer { padding: 20px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 
 .modal-content {
     background-color: var(--deep-space);
-    margin: 15% auto;
-    padding: 20px;
+    margin: 20% auto;
+    padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
     color: var(--text-main);
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
 }
@@ -267,6 +269,7 @@ footer { padding: 20px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 .modal-content h2 {
     margin-bottom: 20px;
     color: var(--accent-blue);
+    align-content: center;
 }
 
 .modal-content p {
