@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /devpage.html
+
+Sitemap: https://spirestudios.org/sitemap.xml
