@@ -92,6 +92,8 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid var(--accent-blue);
     border-radius: 20px;
     color: var(--accent-blue) !important;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 /* Cinematic Hero */
@@ -235,4 +237,60 @@ footer { padding: 20px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--deep-space);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    color: var(--text-main);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: var(--accent-blue);
+}
+
+.modal-content p {
+    margin-bottom: 10px;
+}
+
+.modal-content a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: var(--text-dim);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: white;
 }
