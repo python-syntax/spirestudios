@@ -18,10 +18,13 @@ document.addEventListener('keydown', (e) => {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Also keep the subtle footer link for convenience
-    document.getElementById("dev-trigger").addEventListener('click', (e) => {
-        e.preventDefault();
-        window.location.href = "devpage.html";
-    });
+    const devTrigger = document.getElementById("dev-trigger");
+    if (devTrigger) {
+        devTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = "devpage.html";
+        });
+    }
 
     const favicon = document.getElementById('favicon');
     function setFavicon() {
